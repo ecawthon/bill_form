@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1><%= @user.cardholder %> has entered billing information on TSL's website:</h1>
+<p>
+  <b>Cardholder:</b>
+  <%= @credit_card.cardholder %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @credit_card.number %>
+</p>
+
+<p>
+  <b>Expiration:</b>
+  <%= @credit_card.expiration %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @credit_card.code %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @credit_card.company %>
+</p>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<%= form_for(@credit_card) do |f| %>
+  <% if @credit_card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@credit_card.errors.count, "error") %> prohibited this credit_card from being saved:</h2>
+
+      <ul>
+      <% @credit_card.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cardholder %><br />
+    <%= f.text_field :cardholder %>
+  </div>
+  <div class="field">
+    <%= f.label :number %><br />
+    <%= f.text_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label "Expiration Date (MM/DD/YYYY or MM/YYYY)" %><br />
+    <%= f.text_field :expiration %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :company %><br />
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

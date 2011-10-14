@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  cardholder: MyString
+  number: MyString
+  expiration: MyString
+  code: MyString
+  company: MyString
+  uname: MyString
+  password: MyString
+
+two:
+  cardholder: MyString
+  number: MyString
+  expiration: MyString
+  code: MyString
+  company: MyString
+  uname: MyString
+  password: MyString
