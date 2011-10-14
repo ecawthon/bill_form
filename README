@@ -1,0 +1,3 @@
+This application allows the user to add and edit sets of credit card information. On creating a new user, this sends an email to TSL's business email containing the credit card information.
+
+Still to do: add stmp information and change the :from email in credit_card_mailer.rb
